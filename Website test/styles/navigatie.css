@@ -1,0 +1,242 @@
+#container {
+  z-index: 111;
+}
+
+.navT {
+  transition: all 0.25s;
+  z-index: 111; 
+  width: 100%;
+  background: #212121;
+  height: 65px;
+  left: 0;
+  top: 0;
+  position: fixed;
+}
+
+.navT .icon {
+  transition: all 0.25s;
+  position: absolute;
+  width: 30px;
+  height: 1px;
+  left: 15px;
+  top: 30px;
+  background-color: white;
+}
+
+.navT .icon:before, .navT .icon:after {
+  transition: all 0.25s;
+  width: 30px;
+  height: 1px;
+  left: 0;
+  background: white;
+  position: absolute;
+  content: "";
+}
+
+.navT .icon:before {
+  top: -10px;
+}
+
+.navT .icon:after {
+  top: 10px;
+}
+
+.navT:hover {
+  background: black;
+}
+
+.navT:hover .icon:before {
+  top: -12px;
+}
+
+.navT:hover .icon:after {
+  top: 12px;
+}
+
+.navT.active .icon {
+  transform: rotate(180deg);
+  background-color: transparent;
+  left: 10px;
+}
+
+.navT.active .icon:before, .navT.active .icon:after {
+  top: 0;
+}
+
+.navT.active .icon:before {
+  transform: rotate(45deg);
+}
+
+.navT.active .icon:after {
+  transform: rotate(-45deg);
+}
+
+.Hamburger-Context-Box {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+#menu {
+  z-index: 111;
+  transition: all 0.5s;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 65px;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  width: 100%;
+  height: 0;
+  border-bottom: 10px solid transparent;
+  overflow: hidden;
+}
+
+#menu ul {
+  list-style: none;
+  padding: 0;
+  letter-spacing: 0.4em;
+}
+
+#menu li:first-child {
+  margin-top: 0;
+}
+
+#menu li {
+  transition: all 0.2s;
+  margin-top: 20px;
+  padding: 5px 0;
+  color: rgb(120, 48, 202);
+}
+
+#menu a {
+  padding: 8px;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+#menu a:hover {
+  letter-spacing: 0.5em;
+  text-decoration: underline;
+}
+
+#menu.open {
+  height: 270px;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid black;
+}
+
+/*Tycho van kersen word effect */ 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #b06aed;
+  --color-secondary: #9351ea;
+  --color-tertiary: #9638ee;
+  --color-quaternary: #7c1cf0;
+  --color-quinary: #5000b8;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+
+
+.content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text_shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 10;
+  text-transform: uppercase;
+  font-size: calc(2rem + 1vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  color: transparent;
+  background-color: rgb(145, 133, 161);
+  background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  20% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  80% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  90% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
