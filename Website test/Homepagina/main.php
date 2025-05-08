@@ -25,7 +25,7 @@
 
     <div class="scroll-container">
         <div class="text-overlay">
-            <h2 class="text_shadows">Welkom</h2>
+            <h2 class="text_shadows">Welkom Tycho</h2>
             <p id="aboutText">
                 <b> Welkom! Ik ben Tycho </b><br><br>
                 Ik ben een enthousiaste Software Develepor met een grote passie voor Webdevelopment.<br>
