@@ -25,9 +25,9 @@
 
     <div class="scroll-container">
         <div class="text-overlay">
-            <h2 class="text_shadows">Welkom</h2>
+            <h2 class="text_shadows">MOTHER GIVE ME OATS~</h2>
             <p id="aboutText">
-                <b> Welkom! Ik ben Tycho </b><br><br>
+                <b> Welkom! Ik ben Tycho  </b><br><br>
                 Ik ben een enthousiaste Software Develepor met een grote passie voor Webdevelopment.<br>
                 Deze website is een kijkje in mijn wereld – een verzameling van projecten en vaardigheden waar ik de laaste jaren met plezier aan gewerkt heb. <br> 
                 Of je nu hier bent uit nieuwsgierigheid of een potentiële samenwerking overweegt, neem gerust een kijkje en laat van je horen.<br>
