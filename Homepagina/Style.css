@@ -29,7 +29,7 @@ body {
 
 .text-overlay {
   position: absolute;
-  top: 25%; /* Center the text vertically */
+  top: 15%; /* Center the text vertically */
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;

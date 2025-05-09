@@ -25,7 +25,6 @@
 
     <div id="scrollable" class="scroll-container">
         <div class="text-overlay">
-
             <h2 class="text_shadows">Welkom!</h2>
             <p id="aboutText">
                 <b>Ik ben Tycho </b><br><br>
