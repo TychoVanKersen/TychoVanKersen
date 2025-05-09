@@ -14,33 +14,53 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+    const scrollableDiv = document.getElementById('scrollable');
+    let scrollAccumulator = 0;
+    const threshold = 100; // adjust for sensitivity
+
     window.addEventListener("wheel", function (event) {
-        if (event.deltaY > 0) {
+        event.preventDefault();
+
+        scrollAccumulator += event.deltaY;
+
+        if (scrollAccumulator > threshold) {
             currentIndex = Math.min(currentIndex + 1, elements.length - 1);
-        } else {
+            scrollAccumulator = 0;
+        } else if (scrollAccumulator < -threshold) {
             currentIndex = Math.max(currentIndex - 1, 0);
+            scrollAccumulator = 0;
+        } else {
+            return; // don't update or scroll unless threshold is crossed
         }
+
         updateScrollEffect();
-    });
+
+        const targetElement = elements[currentIndex];
+        if (targetElement) {
+            const containerTop = scrollableDiv.getBoundingClientRect().top;
+            const elementTop = targetElement.getBoundingClientRect().top;
+            const scrollOffset = elementTop - containerTop + scrollableDiv.scrollTop;
+
+            scrollableDiv.scrollTo({
+                top: scrollOffset,
+                behavior: 'smooth'
+            });
+        }
+    }, { passive: false });
 
     updateScrollEffect();
 });
 
+// Age calculation
+const birthyear = 2000;
+const birthmonth = 5;
+const birthday = 17;
 
+const now = new Date();
+let Age = now.getFullYear() - birthyear;
 
-const birthyear = 2000
-const birthmonth = 5
-const birthday = 17
-
-const years = new Date().getFullYear()
-const month = new Date().getMonth()
-const Day =  new Date().getDate()
-
-let Age = years - birthyear;
-if (birthmonth > month && birthday > Day) {
-    Age --;
+if (now.getMonth() < birthmonth - 1 || (now.getMonth() === birthmonth - 1 && now.getDate() < birthday)) {
+    Age--;
 }
 
 document.getElementById("age-box").textContent = "Ik ben " + Age.toString();
-
-

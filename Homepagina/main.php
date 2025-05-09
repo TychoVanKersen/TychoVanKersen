@@ -23,7 +23,7 @@
     <!-- Main menu -->
     <?php require_once('../includes/mainmenu.inc.php'); ?>
 
-    <div class="scroll-container">
+    <div id="scrollable" class="scroll-container">
         <div class="text-overlay">
 
             <h2 class="text_shadows">Welkom!</h2>
