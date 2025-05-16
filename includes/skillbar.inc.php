@@ -75,7 +75,7 @@
 
 <script>
     const skills = [
-        { name: "JavaScript", percent: 65 },
+        { name: "JavaScript", percent: 1100 },
         { name: "PHP", percent:75 },
         { name: "CSS", percent: 75 },
         { name: "HTML", percent: 80 },

@@ -56,7 +56,6 @@
     </div>
 
 
-    <div class="downindicator"></div>
 
     <?php require_once('../includes/loading.php'); ?>
     
