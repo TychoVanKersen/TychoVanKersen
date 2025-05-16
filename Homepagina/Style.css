@@ -1,3 +1,4 @@
+/*
 body {
   font-family: 'Cinzel', serif;
   margin: 0;
@@ -18,30 +19,30 @@ body {
 
 .text-overlay {
   position: absolute;
-  top: 2%; /* Center the text vertically */
+  top: 2%; 
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center;
   color: #ffffff;
-  perspective: 1000px; /* Adds a 3D effect */
+  perspective: 1000px; 
 }
 
 .text-overlay {
   position: absolute;
-  top: 15%; /* Center the text vertically */
+  top: 15%; 
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
   text-align: center;
   color: #ffffff;
-  perspective: 1000px; /* Adds a 3D effect */
+  perspective: 1000px; 
 }
 
 .text-overlay p {
   font-size: 1.5rem;
   opacity: 0;
-  position: absolute; /* Allows stacking effect */
+  position: absolute; 
   left: 0;
   right: 0;
   transition: transform 1.8s ease-out, opacity 0.8s ease-out;
@@ -54,12 +55,12 @@ body {
 }
 
 .text-overlay p.inactive {
-  transform: translateZ(-200px) scale(0.8); /* Shrinks and moves text backward */
+  transform: translateZ(-200px) scale(0.8); 
   opacity: 0;
 }
 
 .text-overlay img {
-  max-width: 400px; /* Prevents oversized images */
+  max-width: 400px; 
   right: 35%;
   display: block;
   margin: 20px auto;
@@ -77,4 +78,133 @@ body {
 .text-overlay img.inactive {
   opacity: 0;
   transform: scale(0.5) translateZ(-200px);
+} */
+
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url(../Foto_Website/background.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.scroll-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.text-overlay {
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Headings */
+h2.text_shadows {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px #000;
+  margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.text-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  transition: transform 1.2s ease-out, opacity 0.8s ease-out;
+  transform: translateY(30px);
+}
+
+.text-overlay p.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Buttons */
+.btn {
+  background-color: #1e90ff;
+  padding: 10px 24px;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0a66c2;
+}
+
+/* Images */
+#transitionImage {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  margin: 30px auto;
+  display: block;
+  transition: transform 0.4s ease, opacity 0.8s ease;
+  transform: scale(0.95);
+}
+
+#transitionImage.visible {
+  opacity: 10;
+  transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  h2.text_shadows {
+    font-size: 2.2rem;
+  }
+
+  .text-overlay p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Textbox animation */
+
+
+
+/* immage animaiton*/
+@keyframes horizontalFloat {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-10px); }
+}
+
+@keyframes glowPulse {
+  0%, 100% { box-shadow: 0 0 20px rgba(106, 10, 203, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(96, 23, 179, 0.6); }
+}
+
+#transitionImage.floating {
+  animation: horizontalFloat 6s ease-in-out infinite, glowPulse 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+  opacity: 1;
 }

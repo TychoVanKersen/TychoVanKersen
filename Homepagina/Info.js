@@ -64,3 +64,7 @@ if (now.getMonth() < birthmonth - 1 || (now.getMonth() === birthmonth - 1 && now
 }
 
 document.getElementById("age-box").textContent = "Ik ben " + Age.toString();
+
+
+
+        
