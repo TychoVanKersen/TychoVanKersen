@@ -349,6 +349,27 @@ span {
   text-decoration: none;
 }
 
+.card11 {
+  font-family: 'Heebo';
+  --bg-filter-opacity: 0.5;
+  height: 20em;
+  width: 15em;
+  font-size: 1.5em;
+  border-radius: 1em;
+  padding: 2em;
+  display: flex;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: middle ;
+  background-image: url(/Foto_Website/ASIGNIT.png);
+  box-shadow: 0 0 5em -1em black;
+  transition: all, var(--transition-time);
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #ccc;
+  text-decoration: none;
+}
+
 
 
 
