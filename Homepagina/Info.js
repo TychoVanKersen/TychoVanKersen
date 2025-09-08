@@ -1,70 +1,77 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".text-overlay p, .text-overlay img");
-    let currentIndex = 0;
+document.addEventListener("DOMContentLoaded", () => {
+  const steps = document.querySelectorAll(".scroll-step");
+  let currentIndex = 0;
 
-    function updateScrollEffect() {
-        elements.forEach((el, index) => {
-            if (index === currentIndex) {
-                el.classList.add("active");
-                el.classList.remove("inactive");
-            } else {
-                el.classList.remove("active");
-                el.classList.add("inactive");
-            }
-        });
-    }
+  // Initially activate first step
+  steps.forEach((el, i) => {
+    if (i === 0) el.classList.add("active");
+    else el.classList.remove("active");
+  });
 
-    const scrollableDiv = document.getElementById('scrollable');
-    let scrollAccumulator = 0;
-    const threshold = 100; // adjust for sensitivity
+  const scrollable = document.getElementById("scrollable");
+  let scrollAccumulator = 0;
+  const threshold = 100;
 
-    window.addEventListener("wheel", function (event) {
-        event.preventDefault();
+  function activateStep(index) {
+    steps.forEach((el, i) => {
+      if (i === index) el.classList.add("active");
+      else el.classList.remove("active");
+    });
+  }
 
-        scrollAccumulator += event.deltaY;
+  function scrollToStep(index) {
+    const target = steps[index];
+    if (!target) return;
+    const containerTop = scrollable.getBoundingClientRect().top;
+    const elTop = target.getBoundingClientRect().top;
+    const offset = elTop - containerTop + scrollable.scrollTop;
+    scrollable.scrollTo({ top: offset, behavior: "smooth" });
+  }
 
-        if (scrollAccumulator > threshold) {
-            currentIndex = Math.min(currentIndex + 1, elements.length - 1);
-            scrollAccumulator = 0;
-        } else if (scrollAccumulator < -threshold) {
-            currentIndex = Math.max(currentIndex - 1, 0);
-            scrollAccumulator = 0;
-        } else {
-            return; // don't update or scroll unless threshold is crossed
+  window.addEventListener(
+    "wheel",
+    (e) => {
+      e.preventDefault();
+      scrollAccumulator += e.deltaY;
+
+      if (scrollAccumulator > threshold) {
+        if (currentIndex < steps.length - 1) {
+          currentIndex++;
+          scrollAccumulator = 0;
+          activateStep(currentIndex);
+          scrollToStep(currentIndex);
         }
-
-        updateScrollEffect();
-
-        const targetElement = elements[currentIndex];
-        if (targetElement) {
-            const containerTop = scrollableDiv.getBoundingClientRect().top;
-            const elementTop = targetElement.getBoundingClientRect().top;
-            const scrollOffset = elementTop - containerTop + scrollableDiv.scrollTop;
-
-            scrollableDiv.scrollTo({
-                top: scrollOffset,
-                behavior: 'smooth'
-            });
+      } else if (scrollAccumulator < -threshold) {
+        if (currentIndex > 0) {
+          currentIndex--;
+          scrollAccumulator = 0;
+          activateStep(currentIndex);
+          scrollToStep(currentIndex);
         }
-    }, { passive: false });
+      }
+    },
+    { passive: false }
+  );
 
-    updateScrollEffect();
+  // Age calculation
+  const birthYear = 2000;
+  const birthMonth = 5; // May
+  const birthDay = 17;
+  const now = new Date();
+  let age = now.getFullYear() - birthYear;
+  if (
+    now.getMonth() < birthMonth - 1 ||
+    (now.getMonth() === birthMonth - 1 && now.getDate() < birthDay)
+  ) {
+    age--;
+  }
+  const ageBox = document.getElementById("age-box");
+  if (ageBox) {
+    ageBox.textContent = age;
+  }
+
+  // Fade in body after page load
+  setTimeout(() => {
+    document.body.style.opacity = "1";
+  }, 100);
 });
-
-// Age calculation
-const birthyear = 2000;
-const birthmonth = 5;
-const birthday = 17;
-
-const now = new Date();
-let Age = now.getFullYear() - birthyear;
-
-if (now.getMonth() < birthmonth - 1 || (now.getMonth() === birthmonth - 1 && now.getDate() < birthday)) {
-    Age--;
-}
-
-document.getElementById("age-box").textContent = "Ik ben " + Age.toString();
-
-
-
-        

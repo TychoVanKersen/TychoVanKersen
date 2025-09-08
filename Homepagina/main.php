@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/Homepagina/Style.css">
     <link rel="stylesheet" href="<?php echo '/styles/navigatie.css'; ?>">
     <link rel="stylesheet" href="<?php echo '/styles/loading.css'; ?>">
-    <link rel="stylesheet" href="<?php echo '/styles/downindicator.css'; ?>">  
     <link  rel="icon" type="image/x-icon" href="/Homepagina/Favicon2.ico">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/CSSRulePlugin.min.js"></script>
@@ -66,7 +65,7 @@
 
         window.addEventListener('load', () => {
             document.body.style.opacity = 1;
-            document.body.style.transition = 'opacity 0.6s ease-in-out';
+            document.body.style.transition = 'opacity 1.6s ease-in-out';
         });
     </script>
 </body>

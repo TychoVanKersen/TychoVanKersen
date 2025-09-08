@@ -143,6 +143,7 @@ section:nth-of-type(even) {
   background: rgba(255, 255, 255, 0.9);
   color: #111;
   transform: rotateY(180deg);
+  overflow: hidden;
 }
 
 .card.flipped {
