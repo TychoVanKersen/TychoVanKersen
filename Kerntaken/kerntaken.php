@@ -17,7 +17,7 @@
       <section onclick="this.querySelector('.card').classList.toggle('flipped')">
         <div class="card">
           <div class="card-side front">B1-K1-W1: Plant werkzaamheden en bewaakt de voortgang</div>
-          <div class="card-side back">etails over het plannen en monitoren van werkzaamheden.</div>
+          <div class="card-side back">Details over het plannen en monitoren van werkzaamheden.</div>
         </div>
       </section>
 
