@@ -3,75 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Kerntaken </title>
-  <link rel="StyleSheet" href="/Kerntaken/kerntaken.css">
+  <title>Kerntaken</title>
+  <link rel="stylesheet" href="/Kerntaken/kerntaken.css">
   <link rel="stylesheet" href="<?php echo '/styles/navigatie.css'; ?>">
   <link rel="icon" type="image/x-icon" href="/Homepagina/Favicon2.ico">
 </head>
 
 <body>
-<?php require_once('../includes/mainmenu.inc.php'); ?>
+  <?php require_once('../includes/mainmenu.inc.php'); ?>
 
   <main>
-  <article>
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+    <article>
+      <section>
         <div class="card">
-          <div class="card-side front">B1-K1-W1: Plant werkzaamheden en bewaakt de voortgang</div>
-          <div class="card-side back">Details over het plannen en monitoren van werkzaamheden.</div>
+          <div class="card-side front">B1-K1-W1:: Plant werkzaamheden en bewaakt de voortgang</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Planning en voortgang</h2>
+            <h3>Opstarten project</h3>
+            <h3>Plannen</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in fermentum orci. Donec tempor.</p>
+            <p>Meer tekst... meer tekst... meer tekst...</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
           <div class="card-side front">B1-K1-W2: Ontwerpt software</div>
-          <div class="card-side back">Details over het ontwerpen van softwarecomponenten.</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Software ontwerp</h2>
+            <p>Uitleg over ontwerpen van softwarecomponenten.</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
-          <div class="card-side front">B1-K1-W3: Realiseert (onderdelen van) software</div>
-          <div class="card-side back">Details over het bouwen en ontwikkelen van softwaremodules.</div>
+          <div class="card-side front">B1-K1-W3: Realiseert software</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Realisatie</h2>
+            <p>Details over het bouwen en ontwikkelen van softwaremodules.</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
           <div class="card-side front">B1-K1-W4: Test softwares</div>
-          <div class="card-side back">Details over het testen en debuggen van softwareapplicaties.</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Testen</h2>
+            <p>Details over testen en debuggen van applicaties.</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
-          <div class="card-side front">B1-K1-W5: Doet verbetervoorstellen voor de software</div>
-          <div class="card-side back">Details over optimalisaties en verbeterprocessen voor software.</div>
+          <div class="card-side front">B1-K1-W5: Doet verbetervoorstellen</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Verbeteringen</h2>
+            <p>Uitleg over optimalisaties en verbeterprocessen.</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
           <div class="card-side front">B1-K2-W1: Voert overleg</div>
-          <div class="card-side back">Details over samenwerking en communicatieve vaardigheden.</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Overleg</h2>
+            <p>Details over samenwerking en communicatie.</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
-          <div class="card-side front">B1-K2-W2: Presenteert het opgeleverde werk</div>
-          <div class="card-side back">Details over presenteren, uitleggen en rapporteren van werk.</div>
+          <div class="card-side front">B1-K2-W2: Presenteert werk</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Presentatie</h2>
+            <p>Uitleg en rapporteren van werk.</p>
+          </div>
         </div>
       </section>
 
-      <section onclick="this.querySelector('.card').classList.toggle('flipped')">
+      <section>
         <div class="card">
-          <div class="card-side front">B1-K2-W3: Reflecteert op het werk</div>
-          <div class="card-side back">Details over reflectie, leerdoelen en zelfontwikkeling.</div>
+          <div class="card-side front">B1-K2-W3: Reflecteert</div>
+          <div class="card-side back">
+            <button class="close-btn">&times;</button>
+            <h2>Reflectie</h2>
+            <p>Zelfontwikkeling en leerdoelen.</p>
+          </div>
         </div>
       </section>
     </article>
   </main>
 
+  <!-- Splatter animation canvas -->
+  <canvas id="splatter-canvas"></canvas>
 
+  <!-- External JS -->
+  <script src="/Kerntaken/kerntaken.js"></script>
 </body>
 </html>
