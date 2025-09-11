@@ -19,11 +19,14 @@
           <div class="card-side front">B1-K1-W1:: Plant werkzaamheden en bewaakt de voortgang</div>
           <div class="card-side back">
             <button class="close-btn">&times;</button>
-            <h2>Planning en voortgang</h2>
+            <h2>Wensen/eisen, planning en ontwerp</h2>
+            <br>
             <h3>Opstarten project</h3> 
             <p>Meer tekst... meer tekst... meer tekst...</p>
             <h3>Plannen</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in fermentum orci. Donec tempor.</p>
+           <h3>Bewaken voortgang </h3>
+           <p>BLABLABLA</p>
           </div>
         </div>
       </section>

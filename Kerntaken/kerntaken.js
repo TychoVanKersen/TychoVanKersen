@@ -48,18 +48,18 @@ window.addEventListener("resize", resizeCanvas);
 
 function playSplatterEffect(x, y) {
   let particles = [];
-  const colors = ["#9900ffff", "#0080ffff", "#cb0a0aff", "#b172dbff", "#d328b7ff"];
+  const colors = ["#9900ffff", "#000000ff", "#cb0a0aff", "#b172dbff", "#d328b7ff"];
 
-  // create 40 particles at given (x,y)
-  for (let i = 0; i < 40; i++) {
+  
+  for (let i = 0; i < 2000; i++) {
     particles.push({
       x: x,
       y: y,
-      radius: Math.random() * 6 + 2,
+      radius: Math.random() * 6 + 3,
       color: colors[Math.floor(Math.random() * colors.length)],
-      dx: (Math.random() - 0.5) * 12,
+      dx: (Math.random() - 0.5) * 24,
       dy: (Math.random() - 0.5) * 12,
-      life: 100
+      life: 1000
     });
   }
 
