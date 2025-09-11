@@ -20,10 +20,10 @@
           <div class="card-side back">
             <button class="close-btn">&times;</button>
             <h2>Planning en voortgang</h2>
-            <h3>Opstarten project</h3>
-            <h3>Plannen</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in fermentum orci. Donec tempor.</p>
+            <h3>Opstarten project</h3> 
             <p>Meer tekst... meer tekst... meer tekst...</p>
+            <h3>Plannen</h3>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in fermentum orci. Donec tempor.</p>
           </div>
         </div>
       </section>
