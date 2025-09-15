@@ -27,7 +27,7 @@
 
     <?php require_once('../includes/mainmenu.inc.php'); ?>
 
-    <header>
+    <header id="test">
         <div class="header">
             <span class="header-text">
                 <h1>Kries </h1>

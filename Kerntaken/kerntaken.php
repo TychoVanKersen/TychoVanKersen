@@ -49,7 +49,8 @@
             <button class="close-btn">&times;</button>
             <h2> <b>Realisatie</b></h2>
             <p> Welke projecten heb ik ontwikkeld waar ik trots op ben.</p>
-            <p> Als eerste de <a href="/Projecten/MagazijnappBuchem.php">MagBuchem applicatie</a> Een magazijn applicatie voor het IT magazijn van onze mentor </p>
+            <p> Als eerste de <a href="/Projecten/MagazijnappBuchem.php"> MagBuchem applicatie</a> Een magazijn applicatie voor het IT magazijn van onze mentor </p> <br>
+            <p> Ook heb ik gewerkt aan <a href="/Projecten/DeAlpenJagers.php"> test</a> </p>
           </div>
         </div>
       </section>

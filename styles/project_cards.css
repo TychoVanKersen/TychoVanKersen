@@ -27,10 +27,11 @@ html {
   
   /* Header */
   .header {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 20vw;
+          display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
     margin-top: -10em;
     z-index: 1;
     flex-wrap: wrap; /* Allows items to wrap on smaller screens */
@@ -39,13 +40,13 @@ html {
   .header-text {
     text-align: center;
     margin-top: 1vw;
-    margin-left: 7.5vw;
+    margin-left: 3vw;
   }
   
   .header-text h1 {
     color: #7700ff;
     font-size: 5vw; /* Dynamic font size based on viewport width */
-    padding: 8vw;
+    padding: 9vw;
     margin-top: 5vw;
     -webkit-text-stroke-width: 0.2vw;
     -webkit-text-stroke-color: #b787ca;
@@ -115,16 +116,27 @@ html {
     height: 15vh;
   }
   
+  #test {
+          display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+  }
+
+
   /* Media Queries for responsiveness */
   @media (max-width: 1024px) {
     .header {
-        flex-direction: row;
-        justify-content: center; /* Keeps the header aligned */
-        margin-left: 0;
+          display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+        /* margin-left: 0; */
         margin-top: -5em; /* Adjust the top margin to keep layout intact */
     }
   
     .header-text {
+    
         margin-left: 0;
         margin-top: 1vw;
     }

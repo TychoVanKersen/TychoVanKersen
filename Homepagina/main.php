@@ -39,6 +39,7 @@
                 <b>Wie en Wat:</b><br><br>
                 <span id="age-box">Ik ben 24 jaar</span> en gespecialiseerd in webdevelopment.<br>
                 Dit portfolio is gebouwd in PHP en JavaScript, maar toont ook mijn ervaring met andere programmeertalen.
+                Ik doe aan boogschieten en Boulderen. <br>
             </p>
 
             <img id="transitionImage" class="floating" src="/Foto_Website/20220716_160134.jpg" alt="Werkvoorbeeld">
