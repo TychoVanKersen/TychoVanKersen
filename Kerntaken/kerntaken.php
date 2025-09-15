@@ -37,7 +37,7 @@
           <div class="card-side back">
             <button class="close-btn">&times;</button>
             <h2>Software ontwerp</h2>
-            <p>Uitleg over ontwerpen van softwarecomponenten.</p>
+            <p> Het ontwerpen van de Software.</p>
           </div>
         </div>
       </section>
@@ -47,8 +47,9 @@
           <div class="card-side front">B1-K1-W3: Realiseert software</div>
           <div class="card-side back">
             <button class="close-btn">&times;</button>
-            <h2>Realisatie</h2>
-            <p>Details over het bouwen en ontwikkelen van softwaremodules.</p>
+            <h2> <b>Realisatie</b></h2>
+            <p> Welke projecten heb ik ontwikkeld waar ik trots op ben.</p>
+            <p> Als eerste de <a href="/Projecten/MagazijnappBuchem.php">MagBuchem applicatie</a> Een magazijn applicatie voor het IT magazijn van onze mentor </p>
           </div>
         </div>
       </section>
