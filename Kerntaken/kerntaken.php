@@ -22,7 +22,9 @@
             <h2>Wensen/eisen, planning en ontwerp</h2>
             <br>
             <h3>Opstarten project</h3> 
-            <p>Meer tekst... meer tekst... meer tekst...</p>
+            <p>Hierrbij kijken we vooral naar de behoefteanalyse.
+              <p> </p>
+            </p>
             <h3>Plannen</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in fermentum orci. Donec tempor.</p>
            <h3>Bewaken voortgang </h3>

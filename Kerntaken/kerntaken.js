@@ -51,7 +51,7 @@ function playSplatterEffect(x, y) {
   const colors = ["#9900ffff", "#000000ff", "#cb0a0aff", "#b172dbff", "#d328b7ff"];
 
   
-  for (let i = 0; i < 2000; i++) {
+  for (let i = 0; i <2000; i++) {
     particles.push({
       x: x,
       y: y,
