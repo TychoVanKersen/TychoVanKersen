@@ -9,7 +9,8 @@
                         "Sprint 7 24 Heures du Mans",
                         "Extern Project Alpen Jagers",
                         "Extern Project Magazijnapp Buchem",
-                        "Extern Project A-SignIT",);
+                        "Extern Project A-SignIT",
+                        "Extern Project Artifactum",);
 
 
     $link[] = "/Projecten/sprint_1.php";
@@ -23,6 +24,7 @@
     $link[] = "/Projecten/DeAlpenJagers.php";
     $link[] = "/Projecten/MagazijnappBuchem.php";
     $link[] = "/Projecten/aSignIT.php";
+    $link[] = "/Projecten/Artifactum.php";
  
 
     $card = 1;
@@ -38,7 +40,8 @@
     "24 Heures du Mans",
     "De AlpenJagers",
     "Magazijnapp Buchem",
-    "A-SignIT");
+    "A-SignIT",
+    "Artifactum",);
 
     foreach ($dataspace as $index => $value){
 ?>

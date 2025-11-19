@@ -22,8 +22,8 @@
             <h2>Wensen/eisen, planning en ontwerp</h2>
             <br>
             <h3>Opstarten project</h3> 
-            <p>Hierrbij kijken we vooral naar de behoefteanalyse.
-              <p> </p>
+            <p>Hierrbij kijken we vooral naar de behoefteanalyse. Zoals deze voor het project van de Museum applicatie Artifactum.
+              <p>  </p>
             </p>
             <h3>Plannen</h3>
            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in fermentum orci. Donec tempor.</p>
